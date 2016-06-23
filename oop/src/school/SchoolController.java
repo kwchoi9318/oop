@@ -18,13 +18,13 @@ import javax.swing.JOptionPane;
 public class SchoolController {
 	public static void main(String[] args) {
 		StudentService service = new StudentServiceImpl();
-		Student stu = null;
+		StudentBean stu = null;
 
 		while (true) {
 			switch (JOptionPane.showInputDialog("1등록 2보기 3수정 4삭제 0종료")) {
 			case "1":
 
-				stu = new Student(JOptionPane.showInputDialog("ID"), JOptionPane.showInputDialog("PW"),
+				stu = new StudentBean(JOptionPane.showInputDialog("ID"), JOptionPane.showInputDialog("PW"),
 						JOptionPane.showInputDialog("이름"), JOptionPane.showInputDialog("주민번호"));
 
 				break;

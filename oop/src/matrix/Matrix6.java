@@ -9,12 +9,15 @@ package matrix;
 public class Matrix6 {
 	public static void main(String[] args) {
 		int k =1;
-		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j < 5; j++) {
-				System.out.print(k++ +"\t");
+		for (int i = 1; i <= 5; i++) {
+			for (int j = 5; j < 0; j--) {
+				if(i>j){
+					System.out.println(j);
+				}else{
+					System.out.print(" ");
+				}
 			}
 		
-			System.out.println("");
 		}
 	}
 }

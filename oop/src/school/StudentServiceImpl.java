@@ -11,11 +11,11 @@ package school;
  */
 public class StudentServiceImpl implements StudentService{
 
-		Student stu;
+		StudentBean stu;
 	@Override
 	public void registStudent(String id, String pw, String name, String ssn) {
 		// TODO Auto-generated method stub
-		stu = new Student(id, pw, name, ssn);
+		stu = new StudentBean(id, pw, name, ssn);
 	}
 	@Override
 	public String showStudent() {

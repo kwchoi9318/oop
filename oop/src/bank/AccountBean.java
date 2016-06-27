@@ -38,7 +38,12 @@ public class AccountBean {
 		this.id = id;
 		this.pw = pw;
 	}
-	
+	public void setName(String name){
+		this.name = name;
+	}
+	public void setId(String id){
+		this.id = id;
+	}
 	public void setMoney(int money){
 		this.money = money;
 	}
@@ -47,7 +52,7 @@ public class AccountBean {
 		this.pw = pw;
 	}
 	public int getAccountNo(){
-		return this.accountNo;
+		return this.accountNo = (int) (Math.random() * 999999)+100000;
 	} 
 	public String getName(){
 		return this.name;
@@ -72,5 +77,10 @@ public class AccountBean {
 				+ ", 아이디=" + id
 				+ "]";
 	}
+	public void setAccountNo() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 }

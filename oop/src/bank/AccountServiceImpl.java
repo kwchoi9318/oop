@@ -44,7 +44,9 @@ public class AccountServiceImpl implements AccountService {
 		}
 		return result;
 	}
-
+	public int count(){
+		return 0;
+	}
 	@Override
 	public String showAccount() {
 		// 5통장내역
